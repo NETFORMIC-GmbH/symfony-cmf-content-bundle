@@ -15,10 +15,10 @@
     ],
     "require": {
         "php": ">=7.1",
-        "symfony/framework-bundle": "^4.4 || ^5.0",
-        "symfony/templating": "^4.4 || ^5.0",
-        "symfony/twig-bundle": "^4.4 || ^5.0",
-        "symfony/validator": "^4.4 || ^5.0",
+        "symfony/framework-bundle": "^4.4 || ^5.0 || ^6.0 || ^7.0",
+        "symfony/templating": "^4.4 || ^5.0 || ^6.0 || ^7.0",
+        "symfony/twig-bundle": "^4.4 || ^5.0 || ^6.0 || ^7.0",
+        "symfony/validator": "^4.4 || ^5.0 || ^6.0 || ^7.0",
         "symfony-cmf/core-bundle": "dev-master",
         "symfony-cmf/menu-bundle": "dev-master",
         "symfony-cmf/routing-bundle": "^2.1"
@@ -26,7 +26,7 @@
     "require-dev": {
         "doctrine/phpcr-odm": "^1.4|^2.0",
         "symfony-cmf/testing": "^3.0.0",
-        "symfony/phpunit-bridge": "^4.4 || ^5.0",
+        "symfony/phpunit-bridge": "^4.4 || ^5.0 || ^6.0 || ^7.0",
         "jackalope/jackalope": "^1.4",
         "jackalope/jackalope-doctrine-dbal": "^1.7"
     },
