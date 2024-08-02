@@ -21,6 +21,7 @@ use Symfony\Cmf\Bundle\MenuBundle\Model\MenuNode;
 use Symfony\Cmf\Bundle\MenuBundle\Model\MenuNodeReferrersInterface;
 use Symfony\Cmf\Component\Routing\RouteObjectInterface;
 use Symfony\Cmf\Component\Routing\RouteReferrersInterface;
+use Symfony\Component\Routing\Route;
 
 /**
  * Standard implementation of StaticContent:.
@@ -264,7 +265,7 @@ class StaticContent extends StaticContentBase implements
     /**
      * {@inheritdoc}
      */
-    public function addRoute($route)
+    public function addRoute(Route $route): void
     {
         $this->routes->add($route);
     }
@@ -272,7 +273,7 @@ class StaticContent extends StaticContentBase implements
     /**
      * {@inheritdoc}
      */
-    public function removeRoute($route)
+    public function removeRoute(Route $route): void
     {
         $this->routes->removeElement($route);
     }
@@ -280,7 +281,7 @@ class StaticContent extends StaticContentBase implements
     /**
      * {@inheritdoc}
      */
-    public function getRoutes()
+    public function getRoutes(): iterable
     {
         return $this->routes;
     }

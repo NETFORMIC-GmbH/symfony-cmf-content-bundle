@@ -44,15 +44,17 @@ class StaticContent extends ModelStaticContent implements HierarchyInterface
     /**
      * {@inheritdoc}
      */
-    public function setParentDocument($parent)
+    public function setParentDocument(object $parent): self
     {
         $this->parent = $parent;
+
+        return $this;
     }
 
     /**
      * {@inheritdoc}
      */
-    public function getParentDocument()
+    public function getParentDocument(): ?object
     {
         return $this->parent;
     }
